@@ -1,0 +1,25 @@
+{
+    "version": 1,
+    "author": "SAKARN BANTADJUN",
+    "editor": "wokwi",
+    "parts": [
+      { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+      { "type": "wokwi-rgb-led", "id": "rgb1", "top": 18.81, "left": 149.84, "attrs": {} },
+      {
+        "type": "wokwi-resistor",
+        "id": "r1",
+        "top": 147.42,
+        "left": 118.84,
+        "attrs": { "value": "1000" }
+      }
+    ],
+    "connections": [
+      [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+      [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+      [ "rgb1:R", "esp:D21", "red", [ "v0" ] ],
+      [ "rgb1:G", "esp:D19", "green", [ "v14.37", "h-43.23", "v-8.74" ] ],
+      [ "rgb1:B", "esp:D18", "cyan", [ "v27.08", "h-62.3", "v-6.17" ] ],
+      [ "esp:3V3", "r1:1", "green", [ "v0" ] ],
+      [ "r1:2", "rgb1:COM", "green", [ "v-15.09", "h-8.85" ] ]
+    ]
+  }
