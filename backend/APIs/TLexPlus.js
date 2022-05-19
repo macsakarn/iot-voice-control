@@ -8,7 +8,7 @@ const wordSplit = async (data) => {
 
   const config = {
     headers:{
-        Apikey : "sZrodh7T7u9XG7BsIOkvehV1an3E76Lj",
+        Apikey : "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
         "Content-Type" : "application/x-www-form-urlencoded"
       }
   };
